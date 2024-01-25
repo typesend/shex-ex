@@ -29,5 +29,5 @@ defprotocol ShEx.Operator do
 
   def triple_expression_label_and_operands(operator)
 
-  defdelegate check(operator, fun), to: ShEx.Operator.Shared
+  Kernel.defdelegate(check(operator, fun), to: ShEx.Operator.Shared)
 end

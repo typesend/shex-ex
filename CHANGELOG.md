@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and
 ## 2024-01-25
 
 This version updates RDF.ex to 1.1.
+Added explicit Kernel.defdelegate to all protocols where defdelegate is inapropriately used as a temporary fix. Function definitions and delegations inside protocols is unsupported in recent versions of Elixir.
 
 ## 0.1.4 - 2020-10-13
 

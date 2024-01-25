@@ -38,7 +38,7 @@ defprotocol ShEx.Violation do
   Currently it's the same as the reason, but might contain additional
   information in the future.
   """
-  defdelegate message(violation), to: ShEx.Violation.Shared
+  Kernel.defdelegate(message(violation), to: ShEx.Violation.Shared)
 end
 
 defmodule ShEx.Violation.NodeKindConstraint do
